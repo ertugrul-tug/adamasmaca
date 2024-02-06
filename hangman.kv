@@ -1,0 +1,28 @@
+<HangmanGame>:
+    orientation: 'vertical'
+
+    Label:
+        id: hangman_display
+        text: ''
+        font_size: '20sp'
+
+    Label:
+        id: word_display
+        text: ''
+        font_size: '20sp'
+
+    Label:
+        id: feedback_display
+        text: ''
+        font_size: '20sp'
+
+    ScrollView:
+        GridLayout:
+            id: keyboard_layout
+            cols: 10
+            spacing: 10
+            size_hint_y: None
+            height: self.minimum_height
+
+<HangmanGameButton>:
+    size_hint: 0.2, 0.2
